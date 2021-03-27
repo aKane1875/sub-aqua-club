@@ -2,56 +2,109 @@
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     margin: 0;
-    color: #1f6e8f;
+    padding: 0;
+    color: #021196;
+    background-color: #f5f5f5;
 }
 
 header {
-    background-color: #f5f5f5;
-    background-image: url("images/logo.jpeg");
-    background-repeat: no-repeat;
-    background-position: left;
-    width: auto;
-    padding: 2em;
-   
+    background-image: url("images/ocean2.jpeg");
+    /*background-repeat: no-repeat;*/
+    background-position: center;*/
+    background-size: contain;
+    /*padding-top: 0.25em;*/
+  
+    
 }
 
     header h1 {
-        color: #09a0e0;
-        font-size: 10rem,
+        color: #f5f5f5;
+        text-align: center;
+        font-size: 5rem;
+        padding-bottom: 0.5Rem;
     }
 
-h2, p {
+h2, p, h3 {
     text-align: center;
+    text-emphasis-style: bold;
 }
 
 .reverse {
-    background-color: #1f6e8f;
+    background-color: #2183ad;;
     color: #f5f5f5;
 }
 a {
-    float: right;
+    /*float: right center;*/
+    text-align: center;
     padding: 0.5em;
-    color: #1f6e8f;
-    text-decoration: none;
+    color: #000a63;
+    font-size: 1.5rem;
 }
-
 
 
 .divepics {
     display: flex;
     justify-content: space-around;
+ 
 }
 
 .photos {
     display: flex;
-
+    justify-content: space-around;
+    text-align: center;
 }
 
-img {
-    width: 50%;
-    height: auto;
- 
+.photos img {
+    width: 75%;
 }
 
-.img5 {flex:0.9840;}
-.img6 {flex:1.3347;}
+.testimonial h1 {
+    font-size: 2.5rem;
+    color: #2183ad;
+}
+
+.testimonial p {
+    color: #2183ad;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1048px) {
+
+    .divepics img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+  
+    .intro h1 {
+      margin-top: 2rem;
+    }
+  
+    .intro {
+      max-height: 200px;
+    }
+  
+    .photos img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+    }
+  
+
+  }
+  
+  @media only screen and (max-width: 320px) {
+  
+    .testimonial h1 {
+      font-size: 2rem;
+    }
+  
+    .photos img {
+      width: 100%;
+    }
+  }
