@@ -34,7 +34,6 @@ h2, p, h3 {
     color: #f5f5f5;
 }
 a {
-    /*float: right center;*/
     text-align: center;
     padding: 0.5em;
     color: #000a63;
@@ -45,7 +44,7 @@ a {
 .divepics {
     display: flex;
     justify-content: space-around;
- 
+    align-items: center;
 }
 
 .photos {
@@ -54,8 +53,16 @@ a {
     text-align: center;
 }
 
+.divepics img {
+  width: 100%;
+  height: auto;
+}
+
+
+
 .photos img {
-    width: 75%;
+  width: 75%;
+  height: auto;
 }
 
 .testimonial h1 {
@@ -72,6 +79,40 @@ a {
 .moredivepics {
   display: flex;
   justify-content: space-around;
+  margin: 0 4em;
+}
+
+.moredivepics img {
+  width: 100%;
+  height: auto;
 }
 
 
+@media only screen and (max-width: 640px) {
+
+  .divepics, .moredivepics {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .divepics, .moredivepics {
+    flex-flow: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+  .divepics, .moredivepics {
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
