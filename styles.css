@@ -8,11 +8,10 @@
 }
 
 header {
-    background-image: url("images/ocean2.jpeg");
-    /*background-repeat: no-repeat;*/
-    background-position: center;*/
-    background-size: contain;
-    /*padding-top: 0.25em;*/
+    background-image: url("images/ocean2.jpeg"); 
+    background-position: center;
+    background-size: fill;
+    
   
     
 }
@@ -36,7 +35,7 @@ h2, p, h3 {
 a {
     text-align: center;
     padding: 0.5em;
-    color: #000a63;
+    color: #f5f5f5;
     font-size: 1.5rem;
 }
 
@@ -76,6 +75,12 @@ a {
     font-size: 1.5em;
 }
 
+aside {
+    color: #2183ad;
+    
+    font-size: 1.5em;
+}
+
 .moredivepics {
   display: flex;
   justify-content: space-around;
@@ -87,6 +92,16 @@ a {
   height: auto;
 }
 
+@media only screen and (max-width: 1050px) {
+
+  divepics, .moredivepics {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: wrap;
+  }
+
+}
 
 @media only screen and (max-width: 640px) {
 
@@ -94,30 +109,26 @@ a {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-
-  .divepics, .moredivepics {
     flex-flow: wrap;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
 
-  header {
-    position: relative;
-    width: 100%;
-    min-height: 100px;
-    margin-bottom: 1.5em;
-  }
 
   header h1 {
     font-size: 2em;
   }
+
+  a {
+    display: block;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+
 
   .divepics, .moredivepics {
     flex-direction: column;
@@ -127,3 +138,5 @@ a {
   }
 
 }
+
+@media only screen and (max-width: )
