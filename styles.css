@@ -76,8 +76,7 @@ a {
 }
 
 aside {
-    color: #2183ad;
-
+    color: #2183ad; 
 }
 
 .moredivepics {
@@ -103,6 +102,18 @@ aside {
 }
 
 @media only screen and (max-width: 640px) {
+
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  a {
+    display: block;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
 
   .divepics, .moredivepics {
     width: 100%;
@@ -137,5 +148,3 @@ aside {
   }
 
 }
-
-@media only screen and (max-width: )
